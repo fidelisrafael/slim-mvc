@@ -1,10 +1,10 @@
 ## Slim MVC
 
-[Slim](https://github.com/codeguy/Slim) is one of the best PHP Frameworks(**IMHO**), but sometimes is annoying for people who like to write webapps in MVC strucuture to adapt to Slim structure, then if you're  bored of using Slim application structure , you should consider give a try to this project.  
+[Slim](https://github.com/codeguy/Slim) is one of the best PHP Frameworks(*IMHO*), but sometimes is annoying for people who like to write webapps in MVC strucuture to adapt to Slim structure, then if you're  bored of using Slim application structure , you should consider give a try to this project.  
 
 The aim of this project is provide a very basic MVC structure to organize your Slim apps.
 
----
+
 ### Getting started
 
 1 - First of all , clone this repository , now this will be your slim project base.     
@@ -75,7 +75,7 @@ class PagesController extends BaseController {
 	protected function _home() {
 		$this->page_title = 'Home';
 		// simulating a model that brings the latest posts
-		$posts  = Posts::recents ;
+		$posts  = Posts::recents() ;
 		// you can pass multiples params by the way, of course (see _terms action below)
 		$this->view_params('posts' , $posts);
 		$this->render("pages/index");
@@ -133,7 +133,6 @@ MyApp::__init() ; // init app
 ?>
 ```
 
----
 ### TODO
 
 - Better documentation
@@ -149,6 +148,6 @@ The project is licensed under the MIT license. See LICENSE file for details.
 
 ##### Pull Requests
 
-1. Fork the SlimMVC repository
-2. Create a new branch for each feature or improvement
-3. Send a pull request from each feature branch to the develop branch
+**1** Fork the `slim-mvc` repository
+**2.** Create a new branch for each feature or improvement
+**3.** Send a pull request from each feature branch to the develop branch
