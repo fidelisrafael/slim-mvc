@@ -8,7 +8,7 @@ The aim of this project is provide a very basic MVC structure to organize your S
 ### Getting started
 
 1 - First of all , clone this repository , now this will be your slim project base.     
-2 - run `$ curl -sS https://getcomposer.org/installer | php && php composer.phar` in the root dir.
+2 - Move on clone directy and run `curl -sS https://getcomposer.org/installer | php && php composer.phar install` in the root dir. 	
 
 ---
 ### App configuration flow
