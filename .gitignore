@@ -15,3 +15,6 @@ Icon
 .Trashes
 
 vendor/*
+
+composer.lock
+composer.phar

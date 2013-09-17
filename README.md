@@ -32,8 +32,8 @@ Router\Helper::map("pages", array(
 
 // News controller (app/controllers/news_controller.php)
 Router\Helper::map("news", array(
-    "/news/:permalink"  => array("get" => "new_show"),
-    "/news/page/:page"  => array("get" => "new_pagination")
+    "/news/:permalink"  => array("get" => "news_show"),
+    "/news/page/:page"  => array("get" => "news_pagination")
 ));
 ?>
 ```
@@ -97,6 +97,29 @@ class PagesController extends BaseController {
 }
 ?>
 ```
+
+**2.1 - News controller example :** `app/controllers/news_controller.php`	
+```php
+<?php
+class NewsController extends BaseController {
+
+	// this function is EVER called before all others
+	public function _init() {
+		print_r($this->params);
+	}
+
+	protected function _news_show() {
+		/* Fetch database and load specific news by permalink */
+	}
+
+	protected function _news_pagination() {
+		// do news pagination
+	}
+}
+
+?>
+```
+
 
 **3 - Create view** :   
 Until now you have routes and controllers configureds, to finish the flow create a view:    
