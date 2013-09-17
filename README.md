@@ -148,6 +148,6 @@ The project is licensed under the MIT license. See LICENSE file for details.
 
 ##### Pull Requests
 
-**1** Fork the `slim-mvc` repository
-**2.** Create a new branch for each feature or improvement
-**3.** Send a pull request from each feature branch to the develop branch
+**1** Fork the `slim-mvc` repository	
+**2.** Create a new branch for each feature or improvement	
+**3.** Send a pull request from each feature branch to the develop branch	
