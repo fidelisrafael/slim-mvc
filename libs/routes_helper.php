@@ -99,9 +99,9 @@ class Helper {
 	public static function getRequestParams($args,$url) {
 		$params = array();
 		/* Get all placeholders for variables in URL */
-		preg_match("/:(\w+)/", $url, $matches);
+		preg_match_all("/:[\w]+/", $url, $matches);
 		/* set values */
-		foreach ($args as $key => $value) { $params[str_replace(":", '' , $matches[$key])] =  $value ; }
+		foreach ($args as $key => $value) { $params[str_replace(":", '' , $matches[0][$key])] =  $value ; }
 		return $params ;
 	}
 
